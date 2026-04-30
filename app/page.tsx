@@ -5,7 +5,7 @@ export default function Home() {
       <p>Mi primera app con Next.js 🚀</p>
     </main>
     <footer>
-        <h1>Hola, soy Santi VVViiui 👋</h1>
+        <h1>Esta en la nueva rama 👋</h1>
     </footer></>
   );
 }
