@@ -6,6 +6,7 @@ export default function Home() {
       <p>Mi primera app con Next.js 🚀</p>
       <p>Mi primera app con Next.js 🚀</p>
       <p>Mi primera app con Next.js 🚀</p>
+      <p>Alg nuevo esta por venir</p>
     </main>
   );
 }
