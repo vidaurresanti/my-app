@@ -11,8 +11,10 @@ export default function Home() {
         <Header />
       </div>
 
-      <main className="flex-1 p-8">
-        <h1 className="text-3xl font-bold mb-4">Experiencia profesional</h1>
+      <main className="min-h-screen bg-gray-950 relative p-8">
+        <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500 opacity-20 blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500 opacity-20 blur-3xl"></div>
+        <h1 className="text-3xl font-bold text-white mb-4">Experiencia profesional</h1>
         <div className="grid grid-cols-1 gap-6 px-50">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-lg font-semibold mb-2">Karlook - Founder</h2>
@@ -25,13 +27,14 @@ export default function Home() {
             <p className="text-gray-700 mb-4">Trabajé en el desarrollo de microservicios utilizando Java y Spring Boot. Implementé soluciones escalables y optimizadas para mejorar el rendimiento de las aplicaciones.</p>
             <Link href="/servicios" className="text-blue-500 hover:underline">Ver más</Link>
           </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-2">Ingeniero de Software en ABC Tech</h2>
 
             <p className="text-gray-700 mb-4">Trabajé en el desarrollo de microservicios utilizando Java y Spring Boot. Implementé soluciones escalables y optimizadas para mejorar el rendimiento de las aplicaciones.</p>
             <Link href="/servicios" className="text-blue-500 hover:underline">Ver más</Link>
           </div>
         </div>
+        <h1 className="text-3xl font-bold text-white mb-4 pt-8">Herramientas utilizadas</h1>
       </main>
 
       {/* FOOTER */}
