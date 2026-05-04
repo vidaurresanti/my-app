@@ -10,6 +10,7 @@ export default function Header () {
           <nav className="flex gap-6">
             <Link href="/">Home</Link>
             <Link href="/servicios">Servicios</Link>
+            <Link href="/experience">Experience</Link>
             <Link href="/contacto">Contacto</Link>
           </nav>
         </div>
