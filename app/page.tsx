@@ -12,8 +12,12 @@ export default function Home() {
       </div>
 
       <main className="min-h-screen bg-gray-950 relative p-8">
+
+        {/* BACKGROUND EFFECTS */}
         <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500 opacity-20 blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500 opacity-20 blur-3xl"></div>
+
+        {/* EXPERIENCE SECTION */}
         <h1 className="text-3xl font-bold text-white mb-4">Experiencia profesional</h1>
         <div className="grid grid-cols-1 gap-6 px-50">
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -34,6 +38,8 @@ export default function Home() {
             <Link href="/servicios" className="text-blue-500 hover:underline">Ver más</Link>
           </div>
         </div>
+
+        {/* TOOLS SECTION */}
         <h1 className="text-3xl font-bold text-white mb-4 pt-8">Herramientas utilizadas</h1>
       </main>
 
