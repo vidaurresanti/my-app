@@ -7,17 +7,31 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-100">
 
       {/* HEADER */}
-      <div>
+      <div className="sticky top-0 z-50">
         <Header />
       </div>
 
       <main className="flex-1 p-8">
-        <section className="text-center max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold">Santiago Vidaurre</h2>
-          <p className="mt-4 text-gray-600">
-            Perfil profesional, herramientas y conocimientos.
-          </p>
-        </section>
+        <h1 className="text-3xl font-bold mb-4">Experiencia profesional</h1>
+        <div className="grid grid-cols-1 gap-6 px-50">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-lg font-semibold mb-2">Karlook - Founder</h2>
+            <p className="text-gray-700 text-sm mb-4">Desarrollé y mantuve aplicaciones web utilizando React, Node.js y MongoDB. Colaboré con equipos de diseño y producto para crear interfaces de usuario intuitivas y funcionales.</p>
+            <Link href="/servicios" className="text-blue-500 hover:underline">Ver más</Link>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-semibold mb-2">Ingeniero de Software en ABC Tech</h2>
+
+            <p className="text-gray-700 mb-4">Trabajé en el desarrollo de microservicios utilizando Java y Spring Boot. Implementé soluciones escalables y optimizadas para mejorar el rendimiento de las aplicaciones.</p>
+            <Link href="/servicios" className="text-blue-500 hover:underline">Ver más</Link>
+          </div>
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-semibold mb-2">Ingeniero de Software en ABC Tech</h2>
+
+            <p className="text-gray-700 mb-4">Trabajé en el desarrollo de microservicios utilizando Java y Spring Boot. Implementé soluciones escalables y optimizadas para mejorar el rendimiento de las aplicaciones.</p>
+            <Link href="/servicios" className="text-blue-500 hover:underline">Ver más</Link>
+          </div>
+        </div>
       </main>
 
       {/* FOOTER */}
