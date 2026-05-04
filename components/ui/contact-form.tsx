@@ -1,5 +1,6 @@
 "use client";
 
+import { Label } from "radix-ui";
 import { useState } from "react";
 
 export default function ContactForm() {
@@ -21,22 +22,31 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <label htmlFor="nombre" className="font-bold">
+        Nombre Completo
+      </label>
       <input
-        placeholder="Nombre"
+        placeholder="Juan Perez"
         value={nombre}
         onChange={(e) => setNombre(e.target.value)}
         className="border p-2 rounded"
       />
 
+      <label htmlFor="email" className="font-bold">
+        Email
+      </label>
       <input
-        placeholder="Email"
+        placeholder="juan@ejemplo.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="border p-2 rounded"
       />
 
+      <label htmlFor="mensaje" className="font-bold">
+        Mensaje
+      </label>
       <textarea
-        placeholder="Mensaje"
+        placeholder="Escribe tu mensaje aquí..."
         value={mensaje}
         onChange={(e) => setMensaje(e.target.value)}
         className="border p-2 rounded"
